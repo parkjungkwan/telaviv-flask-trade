@@ -38,8 +38,21 @@ class SeqModel:
         self.model.summary()
 
         self.model.compile(optimizer = 'sgd', loss = 'mse')
+        self.model.save('./data/simple_model.h5')
 
-        history = self.model.fit(x_train, y_train, epochs = 300, validation_split = 0.3)
+        # history = self.model.fit(x_train, y_train, epochs = 300, validation_split = 0.3)
+        # epochs = np.arange(1, 300+1)
+        # plt.plot(epochs, history.history['loss'], label = 'Training loss')
+        # plt.xlabel('Epoch')
+        # plt.ylabel('Loss')
+        # plt.legend()
+        # plt.show()
+
+    def load_model(self):
+        (x, y) = self.make_random_data()
+        x_train, y_train = x[:150], y[:150]
+        load_model = tf.keras.models.load_model('./data/simple_model.h5')
+        history = load_model.fit(x_train, y_train, epochs = 300, validation_split = 0.3)
         epochs = np.arange(1, 300+1)
         plt.plot(epochs, history.history['loss'], label = 'Training loss')
         plt.xlabel('Epoch')
