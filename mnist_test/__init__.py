@@ -9,7 +9,7 @@ if __name__ == '__main__':
     test_labels = model[1]
     img = model[2]
 
-    i = 0
+    i = 5
     plt.figure(figsize=(6, 3))
     plt.subplot(1, 2, 1)
     mtest.plot_image(i, predictions, test_labels, img)
