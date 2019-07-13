@@ -33,7 +33,7 @@ class MnistTest:
             plt.grid(False)
             plt.imshow(train_images[i], cmap=plt.cm.binary)
             plt.xlabel(self.class_names[train_labels[i]])
-        plt.show()
+        # plt.show()
 
         model = keras.Sequential([
             keras.layers.Flatten(input_shape=(28, 28)),
@@ -64,7 +64,7 @@ class MnistTest:
         arr = [predictions,test_labels,test_images]
         return arr
 
-    def plot_image(self, i, predictions_array, true_label, img):
+    def plot_image(self, i, predictions_array, true_label, img)->[]:
         print(' === plot_image 로 진입 ===')
         predictions_array, true_label, img = predictions_array[i], true_label[i], img[i]
         plt.grid(False)
@@ -72,7 +72,7 @@ class MnistTest:
         plt.yticks([])
 
         plt.imshow(img, cmap=plt.cm.binary)
-        plt.show()
+        # plt.show()
         predicted_label = np.argmax(predictions_array)
         if predicted_label == true_label:
             color = 'blue'
@@ -83,8 +83,6 @@ class MnistTest:
                                              100 * np.max(predictions_array),
                                              self.class_names[true_label]),
                    color=color)
-        plt.show()
-
     @staticmethod
     def plot_value_array(i, predictions_array, true_label):
         predictions_array, true_label = predictions_array[i], true_label[i]
@@ -97,3 +95,7 @@ class MnistTest:
 
         thisplot[predicted_label].set_color('red')
         thisplot[true_label].set_color('blue')
+
+
+
+
