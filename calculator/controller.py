@@ -19,16 +19,8 @@ class CalculatorController:
             menu = self.print_menu()
             if menu == 0:
                 break
-            elif menu == 1:
-                self.model.input_number()
-                self.show('PLUS RESULT IS %d' % model.plus())
-            elif menu == 2:
-                self.show('MINUS RESULT IS %d')
-            elif menu == 3:
-                self.show('MULTI RESULT IS %d')
-            elif menu == 4:
-                self.show('DIVID RESULT IS %d')
-
+            else :
+                self.show(model.hook(menu))
 
     @staticmethod
     def show(param):

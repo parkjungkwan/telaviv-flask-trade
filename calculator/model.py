@@ -9,12 +9,21 @@ class CalculatorModel:
         self.a = int(input('1st number\n'))
         self.b = int(input('2nd number\n'))
 
+    def hook(self, flag):
+        self.input_number()
+        if flag == 1: result = self.plus()
+        elif flag == 2: result = self.minus()
+        elif flag == 3: result = self.multi()
+        elif flag == 4: result = self.divid()
+        return tf.keras.backend.eval(result)
+
+    @tf.function
     def plus(self):
         result = tf.add(self.a, self.b)
         return result
 
-
-    def create_sub_model(self):
+    @tf.function
+    def minus(self):
         w1 = tf.placeholder(tf.float32, name='w1')
         w2 = tf.placeholder(tf.float32, name='w2')
         feed_dict = {'w1': 8.0, 'w2': 2.0}
@@ -27,6 +36,7 @@ class CalculatorModel:
         print('TF 뺄셈결과 {}'.format(result))
         saver.save(sess, './saved_sub_model/model', global_step=1000)
 
+    @tf.function
     def create_mul_model(self):
         w1 = tf.placeholder(tf.float32, name='w1')
         w2 = tf.placeholder(tf.float32, name='w2')
@@ -40,6 +50,7 @@ class CalculatorModel:
         print('TF 곱셈결과 {}'.format(result))
         saver.save(sess, './saved_mul_model/model', global_step=1000)
 
+    @tf.function
     def create_div_model(self):
         w1 = tf.placeholder(tf.float32, name='w1')
         w2 = tf.placeholder(tf.float32, name='w2')
