@@ -20,7 +20,7 @@ class MailCheckerController:
             if menu == 0:
                 break
             elif menu == 1 :
-                model.model.down_eng_dictionary()
+                model.down_eng_dictionary()
             elif menu == 2:
                 emails_test = [
                     '''Subject: flat screens
