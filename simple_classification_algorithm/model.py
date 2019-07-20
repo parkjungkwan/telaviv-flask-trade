@@ -13,4 +13,4 @@ class IrisModel:
         self.classfier_algorithm = Perceptron(eta = 0.1, n_iter= 10)
 
     def get_iris(self):
-        pass
+        return self.iris
