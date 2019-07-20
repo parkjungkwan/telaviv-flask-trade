@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d70190-3d57-4c59-b205-42319ddbce9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/simple_classification_algorithm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/simple_classification_algorithm/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_classification_algorithm/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/simple_classification_algorithm/controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_classification_algorithm/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/simple_classification_algorithm/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_classification_algorithm/perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/simple_classification_algorithm/perceptron.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple_classification_algorithm/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="368">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -59,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simple_classification_algorithm/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="315">
+              <caret line="66" column="48" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="48" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple_classification_algorithm/perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="217">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -156,8 +156,8 @@
         <option value="$PROJECT_DIR$/tf_2_test/tf_2_add.py" />
         <option value="$PROJECT_DIR$/calculator/controller.py" />
         <option value="$PROJECT_DIR$/calculator/model.py" />
-        <option value="$PROJECT_DIR$/simple_classification_algorithm/perceptron.py" />
         <option value="$PROJECT_DIR$/simple_classification_algorithm/__init__.py" />
+        <option value="$PROJECT_DIR$/simple_classification_algorithm/perceptron.py" />
         <option value="$PROJECT_DIR$/simple_classification_algorithm/controller.py" />
         <option value="$PROJECT_DIR$/simple_classification_algorithm/model.py" />
       </list>
@@ -362,12 +362,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18756586" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18756586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25921908" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34924078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -529,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple_classification_algorithm/perceptron.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple_classification_algorithm/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -543,10 +536,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simple_classification_algorithm/perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simple_classification_algorithm/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="368">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
@@ -555,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple_classification_algorithm/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="315">
+          <caret line="66" column="48" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="48" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
