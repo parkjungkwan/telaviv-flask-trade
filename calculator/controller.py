@@ -20,7 +20,8 @@ class CalculatorController:
             if menu == 0:
                 break
             elif menu == 1:
-                self.show('PLUS RESULT IS %d')
+                self.model.input_number()
+                self.show('PLUS RESULT IS %d' % model.plus())
             elif menu == 2:
                 self.show('MINUS RESULT IS %d')
             elif menu == 3:
