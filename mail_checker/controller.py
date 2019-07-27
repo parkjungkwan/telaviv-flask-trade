@@ -1,8 +1,8 @@
-from mail_checker.mail_checker_model import MailChecker
+from mail_checker.model import MailCheckerModel
 
 class MailCheckerController:
     def __init__(self):
-        self.model = MailChecker()
+        self.model = MailCheckerModel()
     @staticmethod
     def print_menu():
         print('0.  종료')
